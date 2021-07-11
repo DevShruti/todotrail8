@@ -17,5 +17,7 @@
 ###### 5th - so you know te rest ...
 
 yarn global add angular-cli-ghpages
+
 ng build --prod --base-href="https://github.com/shruti1234627/todotrail8"
+
 ngh

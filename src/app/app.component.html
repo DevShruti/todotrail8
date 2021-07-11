@@ -1,11 +1,16 @@
+  
+<div class="jumbotron jumbotron-fluid">
 <app-navbar></app-navbar>
 <h1>{{title}}</h1>
 <input type="text" placeholder="Enter the task" #task/>
 <br>
 <br>
-<button (click)="addTask(task.value)">Add New Task</button>
+<button type="button" class="btn btn-success"(click)="addTask(task.value)">Add New Task</button>
 <br>
 <br>
 <ul *ngFor="let item of list">
-  <li>{{item.name}}<button (click)="removeTask(item.id)">Remove</button></li>
+  <li>{{item.name}}<br>
+    <button type="button" class="btn btn-danger"(click)="removeTask(item.id)">Remove</button>
+  </li>
 </ul>
+</div>

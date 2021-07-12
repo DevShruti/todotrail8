@@ -1,6 +1,8 @@
   
 <div class="jumbotron jumbotron-fluid">
 <app-navbar></app-navbar>
+<div class="row">
+  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
 <div class="card" style="width: 18rem;">
   <div class="card-header">{{title}}</div>
 <input type="text" placeholder="Enter the task" #task/>
@@ -14,5 +16,55 @@
     <button type="button" class="btn btn-danger"(click)="removeTask(item.id)">Remove</button>
   </li>
 </ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+  <div class="card" style="width: 18rem;">
+    <div class="card-header">{{title}}</div>
+  <input type="text" placeholder="Enter the task" #task/>
+  <br>
+  
+  <button type="button" class="btn btn-success"(click)="addTask(task.value)">Add New Task</button>
+  
+  
+  <ul class="list-group list-group-flush" *ngFor="let item of list">
+    <li class="list-group-item">{{item.name}}<br>
+      <button type="button" class="btn btn-danger"(click)="removeTask(item.id)">Remove</button>
+    </li>
+  </ul>
+  </div>
+  </div>
+  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+    <div class="card" style="width: 18rem;">
+      <div class="card-header">{{title}}</div>
+    <input type="text" placeholder="Enter the task" #task/>
+    <br>
+    
+    <button type="button" class="btn btn-success"(click)="addTask(task.value)">Add New Task</button>
+    
+    
+    <ul class="list-group list-group-flush" *ngFor="let item of list">
+      <li class="list-group-item">{{item.name}}<br>
+        <button type="button" class="btn btn-danger"(click)="removeTask(item.id)">Remove</button>
+      </li>
+    </ul>
+    </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+      <div class="card" style="width: 18rem;">
+        <div class="card-header">{{title}}</div>
+      <input type="text" placeholder="Enter the task" #task/>
+      <br>
+      
+      <button type="button" class="btn btn-success"(click)="addTask(task.value)">Add New Task</button>
+      
+      
+      <ul class="list-group list-group-flush" *ngFor="let item of list">
+        <li class="list-group-item">{{item.name}}<br>
+          <button type="button" class="btn btn-danger"(click)="removeTask(item.id)">Remove</button>
+        </li>
+      </ul>
+      </div>
+      </div>
 </div>
 </div>
